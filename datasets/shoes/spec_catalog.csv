@@ -1,0 +1,17 @@
+sku,category,brand,material,color,gender,price_range,closure,style,outsole_pattern,heel_height_mm,image_gcs_uri
+SKU-001,shoes,LoopWear,mesh,brown,women,$69-99,velcro,running,lug,0,gs://alara-case-study-bucket/images/SKU-001.jpg
+SKU-002,shoes,LoopWear,leather,beige,men,$99-129,lace-up,hiking,lug,10,gs://alara-case-study-bucket/images/SKU-002.jpg
+SKU-003,shoes,LoopWear,mesh,blue,men,$69-99,lace-up,hiking,lug,0,gs://alara-case-study-bucket/images/SKU-003.jpg
+SKU-004,shoes,LoopWear,mesh,white,women,$129-179,slip-on,running,lug,0,gs://alara-case-study-bucket/images/SKU-004.jpg
+SKU-005,shoes,LoopWear,suede,olive,men,$49-69,velcro,loafer,smooth,30,gs://alara-case-study-bucket/images/SKU-005.jpg
+SKU-006,shoes,LoopWear,mesh,black,kids,$49-69,velcro,boot,lug,20,gs://alara-case-study-bucket/images/SKU-006.jpg
+SKU-007,shoes,LoopWear,canvas,navy,women,$49-69,velcro,hiking,smooth,10,gs://alara-case-study-bucket/images/SKU-007.jpg
+SKU-008,shoes,LoopWear,synthetic,brown,men,$99-129,slip-on,loafer,lug,10,gs://alara-case-study-bucket/images/SKU-008.jpg
+SKU-009,shoes,LoopWear,suede,olive,unisex,$99-129,lace-up,loafer,lug,0,gs://alara-case-study-bucket/images/SKU-009.jpg
+SKU-010,shoes,LoopWear,suede,beige,kids,$49-69,velcro,boot,waffle,20,gs://alara-case-study-bucket/images/SKU-010.jpg
+SKU-011,shoes,LoopWear,suede,white,kids,$49-69,lace-up,loafer,smooth,30,gs://alara-case-study-bucket/images/SKU-011.jpg
+SKU-012,shoes,LoopWear,leather,blue,women,$69-99,buckle,boot,lug,30,gs://alara-case-study-bucket/images/SKU-012.jpg
+SKU-013,shoes,LoopWear,suede,brown,men,$99-129,velcro,loafer,lug,30,gs://alara-case-study-bucket/images/SKU-013.jpg
+SKU-014,shoes,LoopWear,leather,brown,kids,$99-129,buckle,hiking,waffle,30,gs://alara-case-study-bucket/images/SKU-014.jpg
+SKU-015,shoes,LoopWear,canvas,white,kids,$49-69,buckle,sandal,lug,30,gs://alara-case-study-bucket/images/SKU-015.jpg
+SKU-016,shoes,LoopWear,mesh,tan,women,$129-179,slip-on,sneaker,smooth,20,gs://alara-case-study-bucket/images/SKU-016.jpg

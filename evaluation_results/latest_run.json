@@ -1,0 +1,542 @@
+[
+    {
+        "sample_index": 0,
+        "payload": {
+            "sku": "SKU-001",
+            "question": "What is the closure type?",
+            "context_ids": [
+                "brand_rules_shoes_v1",
+                "policy_shoes_v1"
+            ]
+        },
+        "expected": {
+            "allow_insufficient": true
+        },
+        "status": "SUCCESS",
+        "api_output": {
+            "answer": "Based on the image, the shoes feature a lace-up closure. However, the product attributes in the context card state the closure type as 'velcro'. There is a clear discrepancy between the visual evidence and the provided specification.",
+            "grounding": {
+                "citations": [
+                    "R-101",
+                    "spec:closure",
+                    "R-102"
+                ],
+                "visual_refs": [
+                    "The image clearly shows shoelaces on the upper part of the shoe.",
+                    "The outsole pattern is not visible in the image."
+                ]
+            },
+            "structured": {
+                "attributes": {
+                    "color": {
+                        "value": "black",
+                        "source": "image"
+                    },
+                    "closure": {
+                        "value": "laces",
+                        "source": "image"
+                    },
+                    "style": {
+                        "value": "dress shoe",
+                        "source": "image"
+                    },
+                    "outsole_pattern": {
+                        "value": "insufficient visual evidence",
+                        "source": "image"
+                    }
+                },
+                "compliance": {
+                    "R-101": {
+                        "pass": false,
+                        "reason": "The image displays black shoes, but the product attributes list the color as 'brown'. This is a direct conflict between the image and the spec catalog for color."
+                    },
+                    "R-102": {
+                        "pass": true,
+                        "reason": "The outsole pattern is not clearly visible in the image, leading to a response of 'insufficient visual evidence' for this attribute, which aligns with the rule."
+                    },
+                    "R-103": {
+                        "pass": true,
+                        "reason": "No claims of 'orthopedic', 'medical', or 'injury-preventing' benefits are made in the provided context."
+                    },
+                    "R-104": {
+                        "pass": true,
+                        "reason": "The product attributes specify 'mesh' as the material. While the image does not clearly show mesh and appears to be a different material, the rule states 'unless visible or confirmed by spec'. The spec confirms 'mesh', so the assertion is based on the spec."
+                    },
+                    "R-201": {
+                        "pass": true,
+                        "reason": "This rule pertains to the product title, which is not provided in the current context. Assuming compliance for a hypothetical title."
+                    },
+                    "R-202": {
+                        "pass": true,
+                        "reason": "No product description is provided, and therefore no medical or orthopedic claims are present."
+                    },
+                    "R-203": {
+                        "pass": true,
+                        "reason": "No claim of water resistance is made, and it is not specified in the product attributes."
+                    },
+                    "R-204": {
+                        "pass": true,
+                        "reason": "No prominent logos or third-party watermarks are visible in the provided image."
+                    }
+                }
+            },
+            "diagnostics": {
+                "latency": 20.28,
+                "model": "gemini-2.5-flash",
+                "tokens": 0
+            }
+        },
+        "evaluation": {
+            "pass": true,
+            "reason": "API returned a valid answer."
+        }
+    },
+    {
+        "sample_index": 1,
+        "payload": {
+            "sku": "SKU-002",
+            "question": "What is the closure type?",
+            "context_ids": [
+                "brand_rules_shoes_v1",
+                "policy_shoes_v1"
+            ]
+        },
+        "expected": {
+            "allow_insufficient": true
+        },
+        "status": "SUCCESS",
+        "api_output": {
+            "answer": "The image displays a slip-on shoe with no visible closure mechanism such as laces, buckles, or straps. However, the product attributes in the context card state the closure type is \"lace-up\". Therefore, there is a discrepancy between the visual evidence and the provided product specification.",
+            "grounding": {
+                "citations": [
+                    "spec:closure",
+                    "R-101"
+                ],
+                "visual_refs": [
+                    "The image shows a shoe without laces, buckles, or other closure types, indicating a slip-on style."
+                ]
+            },
+            "structured": {
+                "attributes": {
+                    "color": {
+                        "value": "reddish-brown",
+                        "source": "image"
+                    },
+                    "closure": {
+                        "value": "slip-on",
+                        "source": "image"
+                    },
+                    "style": {
+                        "value": "loafer",
+                        "source": "image"
+                    },
+                    "outsole_pattern": {
+                        "value": "not visible",
+                        "source": "image"
+                    }
+                },
+                "compliance": {
+                    "R-101": {
+                        "pass": false,
+                        "reason": "The image shows a reddish-brown shoe, which conflicts with the 'beige' color specified in the product attributes."
+                    },
+                    "R-102": {
+                        "pass": true,
+                        "reason": "While there are discrepancies between the image and spec for several attributes, the visual evidence for the attributes in question (color, closure, style) is clear enough to make a determination or note a conflict, rather than being 'unclear'. For the outsole pattern, the bottom is not visible, so 'not visible' is an accurate observation rather than 'unclear evidence' that needs further explanation."
+                    },
+                    "R-103": {
+                        "pass": true,
+                        "reason": "No orthopedic, medical, or injury-preventing benefits were claimed or implied."
+                    },
+                    "R-104": {
+                        "pass": true,
+                        "reason": "The material 'leather' is stated in the spec, and no assertion about the material was made solely based on the image."
+                    },
+                    "R-201": {
+                        "pass": true,
+                        "reason": "This rule pertains to the product title, which is not part of the current task."
+                    },
+                    "R-202": {
+                        "pass": true,
+                        "reason": "No medical or orthopedic claims were included in the answer or attribute extraction."
+                    },
+                    "R-203": {
+                        "pass": true,
+                        "reason": "Water resistance was not stated, as it is not present in the spec."
+                    },
+                    "R-204": {
+                        "pass": true,
+                        "reason": "No logo is visible in the image."
+                    }
+                }
+            },
+            "diagnostics": {
+                "latency": 25.09,
+                "model": "gemini-2.5-flash",
+                "tokens": 0
+            }
+        },
+        "evaluation": {
+            "pass": true,
+            "reason": "API returned a valid answer."
+        }
+    },
+    {
+        "sample_index": 2,
+        "payload": {
+            "sku": "SKU-003",
+            "question": "What is the closure type?",
+            "context_ids": [
+                "brand_rules_shoes_v1",
+                "policy_shoes_v1"
+            ]
+        },
+        "expected": {
+            "allow_insufficient": true
+        },
+        "status": "SUCCESS",
+        "api_output": {
+            "answer": "The image displays a sandal with an elastic or slingback strap closure. This contradicts the product attributes provided, which state the closure type is \"lace-up\".",
+            "grounding": {
+                "citations": [
+                    "spec:closure",
+                    "R-101"
+                ],
+                "visual_refs": [
+                    "The image shows a sandal with a strap around the heel and across the foot, with no visible laces.",
+                    "The visible material appears to be a soft, possibly synthetic leather or suede-like material, not mesh.",
+                    "The color of the sandal in the image is light brown/tan."
+                ]
+            },
+            "structured": {
+                "attributes": {
+                    "color": {
+                        "value": "light brown/tan",
+                        "source": "image"
+                    },
+                    "closure": {
+                        "value": "elastic strap/slingback",
+                        "source": "image"
+                    },
+                    "style": {
+                        "value": "sandal",
+                        "source": "image"
+                    },
+                    "outsole_pattern": {
+                        "value": "insufficient visual evidence",
+                        "source": "image"
+                    }
+                },
+                "compliance": {
+                    "R-101": {
+                        "pass": false,
+                        "reason": "The image shows a light brown/tan sandal, but the spec catalog lists the color as 'blue'. This is a direct conflict."
+                    },
+                    "R-102": {
+                        "pass": true,
+                        "reason": "This rule dictates how to respond when evidence is unclear. For the outsole pattern, 'insufficient visual evidence' was used as the outsole is not clearly visible."
+                    },
+                    "R-103": {
+                        "pass": true,
+                        "reason": "No orthopedic, medical, or injury-preventing benefits are claimed in the provided context."
+                    },
+                    "R-104": {
+                        "pass": false,
+                        "reason": "The spec lists 'mesh' as the material, but the image shows a material that appears to be a soft, possibly synthetic leather or suede-like material, not mesh. This is a discrepancy."
+                    },
+                    "R-201": {
+                        "pass": true,
+                        "reason": "This rule pertains to the format of a product title, which is not provided in the context. Assuming a title would be generated in compliance."
+                    },
+                    "R-202": {
+                        "pass": true,
+                        "reason": "No product descriptions are provided, so no medical/orthopedic claims are present."
+                    },
+                    "R-203": {
+                        "pass": true,
+                        "reason": "Water resistance is not mentioned in the spec or implied by the image."
+                    },
+                    "R-204": {
+                        "pass": true,
+                        "reason": "No brand logo is visible on the product in the image. The 'SKU-003' text is an image identifier, not a product logo."
+                    }
+                }
+            },
+            "diagnostics": {
+                "latency": 17.86,
+                "model": "gemini-2.5-flash",
+                "tokens": 0
+            }
+        },
+        "evaluation": {
+            "pass": true,
+            "reason": "API returned a valid answer."
+        }
+    },
+    {
+        "sample_index": 3,
+        "payload": {
+            "sku": "SKU-004",
+            "question": "What is the closure type?",
+            "context_ids": [
+                "brand_rules_shoes_v1",
+                "policy_shoes_v1"
+            ]
+        },
+        "expected": {
+            "allow_insufficient": true
+        },
+        "status": "SUCCESS",
+        "api_output": {
+            "answer": "The closure type of the shoe is slip-on, as indicated by both the visual evidence in the image and the product specifications.",
+            "grounding": {
+                "citations": [
+                    "spec:closure"
+                ],
+                "visual_refs": [
+                    "The image shows a shoe without laces, buckles, or straps, consistent with a slip-on design."
+                ]
+            },
+            "structured": {
+                "attributes": {
+                    "color": {
+                        "value": "dark blue (discrepancy with spec: white)",
+                        "source": "image"
+                    },
+                    "closure": {
+                        "value": "slip-on",
+                        "source": "image|spec"
+                    },
+                    "style": {
+                        "value": "casual (discrepancy with spec: running)",
+                        "source": "image"
+                    },
+                    "outsole_pattern": {
+                        "value": "smooth/subtly textured (insufficient visual evidence to confirm 'lug' pattern from spec)",
+                        "source": "image"
+                    }
+                },
+                "compliance": {
+                    "R-101": {
+                        "pass": true,
+                        "reason": "The analysis identifies and states the discrepancy between the image's dark blue color and the spec's 'white' color, complying with the rule."
+                    },
+                    "R-102": {
+                        "pass": true,
+                        "reason": "The analysis notes 'insufficient visual evidence' for the outsole pattern, complying with the rule."
+                    },
+                    "R-103": {
+                        "pass": true,
+                        "reason": "No orthopedic, medical, or injury-preventing benefits are claimed in the provided context or analysis."
+                    },
+                    "R-104": {
+                        "pass": true,
+                        "reason": "The analysis does not assert material beyond what is visible or confirmed by spec. The spec states 'mesh', which is a plausible fabric for the visible upper, though not distinctly identifiable as mesh from the image alone."
+                    },
+                    "R-201": {
+                        "pass": false,
+                        "reason": "Cannot assess compliance as no product title is provided to check against the rule."
+                    },
+                    "R-202": {
+                        "pass": true,
+                        "reason": "No product description is provided to check for medical/orthopedic claims."
+                    },
+                    "R-203": {
+                        "pass": true,
+                        "reason": "No water resistance claim is made, and it is not mentioned in the product specifications."
+                    },
+                    "R-204": {
+                        "pass": true,
+                        "reason": "No logo is visible on the shoe in the image to check for compliance."
+                    }
+                }
+            },
+            "diagnostics": {
+                "latency": 18.33,
+                "model": "gemini-2.5-flash",
+                "tokens": 0
+            }
+        },
+        "evaluation": {
+            "pass": true,
+            "reason": "API returned a valid answer."
+        }
+    },
+    {
+        "sample_index": 4,
+        "payload": {
+            "sku": "SKU-005",
+            "question": "What is the closure type?",
+            "context_ids": [
+                "brand_rules_shoes_v1",
+                "policy_shoes_v1"
+            ]
+        },
+        "expected": {
+            "allow_insufficient": true
+        },
+        "status": "SUCCESS",
+        "api_output": {
+            "answer": "The closure type for the product described in the context card is velcro. This is explicitly stated in the product attributes and is consistent with the appearance of the bottom shoe in the image, which features a strap across the vamp that appears to be a velcro closure.",
+            "grounding": {
+                "citations": [
+                    "spec:closure"
+                ],
+                "visual_refs": [
+                    "The bottom shoe in the image shows a strap across the vamp that appears to be a velcro closure."
+                ]
+            },
+            "structured": {
+                "attributes": {
+                    "color": {
+                        "value": "navy",
+                        "source": "image"
+                    },
+                    "closure": {
+                        "value": "velcro",
+                        "source": "spec"
+                    },
+                    "style": {
+                        "value": "loafer",
+                        "source": "spec"
+                    },
+                    "outsole_pattern": {
+                        "value": "smooth",
+                        "source": "spec"
+                    }
+                },
+                "compliance": {
+                    "R-101": {
+                        "pass": false,
+                        "reason": "The spec catalog describes the color as 'olive', but the bottom shoe in the image, which matches other attributes like closure and style, is clearly 'navy'. This is a discrepancy."
+                    },
+                    "R-102": {
+                        "pass": true,
+                        "reason": "Visual evidence is sufficient to identify the closure type, style, and outsole pattern, and to note the color discrepancy."
+                    },
+                    "R-103": {
+                        "pass": true,
+                        "reason": "No claims of 'orthopedic', 'medical', or 'injury-preventing' benefits are made."
+                    },
+                    "R-104": {
+                        "pass": true,
+                        "reason": "No material assertions are made beyond what is stated in the spec, and the question does not require such an assertion."
+                    },
+                    "R-201": {
+                        "pass": true,
+                        "reason": "This rule pertains to a product title, which is not provided or evaluated in this context."
+                    },
+                    "R-202": {
+                        "pass": true,
+                        "reason": "No medical or orthopedic claims are included in the response or implied by the context."
+                    },
+                    "R-203": {
+                        "pass": true,
+                        "reason": "Water resistance is not mentioned in the spec and is not stated."
+                    },
+                    "R-204": {
+                        "pass": true,
+                        "reason": "No logo is visible in the provided image."
+                    }
+                }
+            },
+            "diagnostics": {
+                "latency": 16.09,
+                "model": "gemini-2.5-flash",
+                "tokens": 0
+            }
+        },
+        "evaluation": {
+            "pass": true,
+            "reason": "API returned a valid answer."
+        }
+    },
+    {
+        "sample_index": 5,
+        "payload": {
+            "sku": "SKU-010",
+            "question": "Can we claim it is orthopedic?",
+            "context_ids": [
+                "brand_rules_shoes_v1",
+                "policy_shoes_v1"
+            ]
+        },
+        "expected": {
+            "forbid_claim_rule": "R-103"
+        },
+        "status": "SUCCESS",
+        "api_output": {
+            "answer": "No, you cannot claim that the product is orthopedic. Rules R-103 and R-202 explicitly prohibit making 'orthopedic', 'medical', or 'injury-preventing' claims in product descriptions or benefits.",
+            "grounding": {
+                "citations": [
+                    "R-103",
+                    "R-202"
+                ],
+                "visual_refs": []
+            },
+            "structured": {
+                "attributes": {
+                    "color": {
+                        "value": "brown",
+                        "source": "image"
+                    },
+                    "closure": {
+                        "value": "velcro",
+                        "source": "image"
+                    },
+                    "style": {
+                        "value": "sandal",
+                        "source": "image"
+                    },
+                    "outsole_pattern": {
+                        "value": "insufficient visual evidence",
+                        "source": "image"
+                    }
+                },
+                "compliance": {
+                    "R-101": {
+                        "pass": false,
+                        "reason": "The image shows brown sandals, but the product_attributes specify 'beige' for color. This is a discrepancy."
+                    },
+                    "R-102": {
+                        "pass": true,
+                        "reason": "This rule is a guideline for response; 'insufficient visual evidence' was used for outsole_pattern."
+                    },
+                    "R-103": {
+                        "pass": false,
+                        "reason": "The user's question directly asks about making an 'orthopedic' claim, which this rule explicitly prohibits."
+                    },
+                    "R-104": {
+                        "pass": true,
+                        "reason": "No material claim is being asserted from the image that contradicts the spec, nor is the image being used to confirm the 'suede' material."
+                    },
+                    "R-201": {
+                        "pass": true,
+                        "reason": "This rule pertains to title creation and is not directly violated by the current image or question. Assuming title would be created correctly."
+                    },
+                    "R-202": {
+                        "pass": false,
+                        "reason": "The user's question about an 'orthopedic' claim directly violates this rule, which prohibits medical/orthopedic claims in descriptions."
+                    },
+                    "R-203": {
+                        "pass": true,
+                        "reason": "Water resistance is not mentioned in the spec and no claim is being made about it."
+                    },
+                    "R-204": {
+                        "pass": true,
+                        "reason": "No logo is visible in the product image."
+                    }
+                }
+            },
+            "diagnostics": {
+                "latency": 13.78,
+                "model": "gemini-2.5-flash",
+                "tokens": 0
+            }
+        },
+        "evaluation": {
+            "pass": true,
+            "reason": "Correctly failed compliance rule R-103."
+        }
+    }
+]

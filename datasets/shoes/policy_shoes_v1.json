@@ -1,0 +1,40 @@
+{
+  "rules": [
+    {
+      "id": "R-201",
+      "text": "Title must include brand + category (e.g., 'LoopWear Men Sneakers').",
+      "mandatory": true,
+      "categories": [
+        "shoes",
+        "*"
+      ]
+    },
+    {
+      "id": "R-202",
+      "text": "Descriptions must not include medical/orthopedic claims.",
+      "mandatory": true,
+      "categories": [
+        "shoes",
+        "*"
+      ]
+    },
+    {
+      "id": "R-203",
+      "text": "Do not state water resistance unless in spec.",
+      "mandatory": true,
+      "categories": [
+        "shoes",
+        "*"
+      ]
+    },
+    {
+      "id": "R-204",
+      "text": "If logo appears, ensure it is the brand logo (no third-party watermarks).",
+      "mandatory": true,
+      "categories": [
+        "shoes",
+        "*"
+      ]
+    }
+  ]
+}

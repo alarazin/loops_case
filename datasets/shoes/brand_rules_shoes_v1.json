@@ -1,0 +1,43 @@
+{
+  "brand_voice": {
+    "tone": "professional, concise",
+    "disclaimers": "Avoid unverifiable health/medical or durability claims."
+  },
+  "rules": [
+    {
+      "id": "R-101",
+      "text": "Color descriptions must match spec catalog; if conflicting with image, state discrepancy.",
+      "mandatory": true,
+      "categories": [
+        "shoes",
+        "*"
+      ]
+    },
+    {
+      "id": "R-102",
+      "text": "When evidence is unclear, respond with 'insufficient visual evidence' and explain briefly.",
+      "mandatory": true,
+      "categories": [
+        "*"
+      ]
+    },
+    {
+      "id": "R-103",
+      "text": "Never claim 'orthopedic', 'medical', or 'injury-preventing' benefits.",
+      "mandatory": true,
+      "categories": [
+        "shoes",
+        "*"
+      ]
+    },
+    {
+      "id": "R-104",
+      "text": "Do not assert material (e.g., leather) unless visible or confirmed by spec.",
+      "mandatory": true,
+      "categories": [
+        "shoes",
+        "*"
+      ]
+    }
+  ]
+}

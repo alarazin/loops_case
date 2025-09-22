@@ -1,0 +1,258 @@
+{
+  "SKU-001": {
+    "sku": "SKU-001",
+    "category": "shoes",
+    "brand": "LoopWear",
+    "material": "mesh",
+    "color": "brown",
+    "gender": "women",
+    "price_range": "$69-99",
+    "attributes": {
+      "closure": "velcro",
+      "style": "running",
+      "outsole_pattern": "lug",
+      "heel_height_mm": 0
+    },
+    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-001.jpg"
+  },
+  "SKU-002": {
+    "sku": "SKU-002",
+    "category": "shoes",
+    "brand": "LoopWear",
+    "material": "leather",
+    "color": "beige",
+    "gender": "men",
+    "price_range": "$99-129",
+    "attributes": {
+      "closure": "lace-up",
+      "style": "hiking",
+      "outsole_pattern": "lug",
+      "heel_height_mm": 10
+    },
+    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-002.jpg"
+  },
+  "SKU-003": {
+    "sku": "SKU-003",
+    "category": "shoes",
+    "brand": "LoopWear",
+    "material": "mesh",
+    "color": "blue",
+    "gender": "men",
+    "price_range": "$69-99",
+    "attributes": {
+      "closure": "lace-up",
+      "style": "hiking",
+      "outsole_pattern": "lug",
+      "heel_height_mm": 0
+    },
+    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-003.jpg"
+  },
+  "SKU-004": {
+    "sku": "SKU-004",
+    "category": "shoes",
+    "brand": "LoopWear",
+    "material": "mesh",
+    "color": "white",
+    "gender": "women",
+    "price_range": "$129-179",
+    "attributes": {
+      "closure": "slip-on",
+      "style": "running",
+      "outsole_pattern": "lug",
+      "heel_height_mm": 0
+    },
+    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-004.jpg"
+  },
+  "SKU-005": {
+    "sku": "SKU-005",
+    "category": "shoes",
+    "brand": "LoopWear",
+    "material": "suede",
+    "color": "olive",
+    "gender": "men",
+    "price_range": "$49-69",
+    "attributes": {
+      "closure": "velcro",
+      "style": "loafer",
+      "outsole_pattern": "smooth",
+      "heel_height_mm": 30
+    },
+    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-005.jpg"
+  },
+  "SKU-006": {
+    "sku": "SKU-006",
+    "category": "shoes",
+    "brand": "LoopWear",
+    "material": "mesh",
+    "color": "black",
+    "gender": "kids",
+    "price_range": "$49-69",
+    "attributes": {
+      "closure": "velcro",
+      "style": "boot",
+      "outsole_pattern": "lug",
+      "heel_height_mm": 20
+    },
+    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-006.jpg"
+  },
+  "SKU-007": {
+    "sku": "SKU-007",
+    "category": "shoes",
+    "brand": "LoopWear",
+    "material": "canvas",
+    "color": "navy",
+    "gender": "women",
+    "price_range": "$49-69",
+    "attributes": {
+      "closure": "velcro",
+      "style": "hiking",
+      "outsole_pattern": "smooth",
+      "heel_height_mm": 10
+    },
+    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-007.jpg"
+  },
+  "SKU-008": {
+    "sku": "SKU-008",
+    "category": "shoes",
+    "brand": "LoopWear",
+    "material": "synthetic",
+    "color": "brown",
+    "gender": "men",
+    "price_range": "$99-129",
+    "attributes": {
+      "closure": "slip-on",
+      "style": "loafer",
+      "outsole_pattern": "lug",
+      "heel_height_mm": 10
+    },
+    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-008.jpg"
+  },
+  "SKU-009": {
+    "sku": "SKU-009",
+    "category": "shoes",
+    "brand": "LoopWear",
+    "material": "suede",
+    "color": "olive",
+    "gender": "unisex",
+    "price_range": "$99-129",
+    "attributes": {
+      "closure": "lace-up",
+      "style": "loafer",
+      "outsole_pattern": "lug",
+      "heel_height_mm": 0
+    },
+    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-009.jpg"
+  },
+  "SKU-010": {
+    "sku": "SKU-010",
+    "category": "shoes",
+    "brand": "LoopWear",
+    "material": "suede",
+    "color": "beige",
+    "gender": "kids",
+    "price_range": "$49-69",
+    "attributes": {
+      "closure": "velcro",
+      "style": "boot",
+      "outsole_pattern": "waffle",
+      "heel_height_mm": 20
+    },
+    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-010.jpg"
+  },
+  "SKU-011": {
+    "sku": "SKU-011",
+    "category": "shoes",
+    "brand": "LoopWear",
+    "material": "suede",
+    "color": "white",
+    "gender": "kids",
+    "price_range": "$49-69",
+    "attributes": {
+      "closure": "lace-up",
+      "style": "loafer",
+      "outsole_pattern": "smooth",
+      "heel_height_mm": 30
+    },
+    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-011.jpg"
+  },
+  "SKU-012": {
+    "sku": "SKU-012",
+    "category": "shoes",
+    "brand": "LoopWear",
+    "material": "leather",
+    "color": "blue",
+    "gender": "women",
+    "price_range": "$69-99",
+    "attributes": {
+      "closure": "buckle",
+      "style": "boot",
+      "outsole_pattern": "lug",
+      "heel_height_mm": 30
+    },
+    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-012.jpg"
+  },
+  "SKU-013": {
+    "sku": "SKU-013",
+    "category": "shoes",
+    "brand": "LoopWear",
+    "material": "suede",
+    "color": "brown",
+    "gender": "men",
+    "price_range": "$99-129",
+    "attributes": {
+      "closure": "velcro",
+      "style": "loafer",
+      "outsole_pattern": "lug",
+      "heel_height_mm": 30
+    },
+    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-013.jpg"
+  },
+  "SKU-014": {
+    "sku": "SKU-014",
+    "category": "shoes",
+    "brand": "LoopWear",
+    "material": "leather",
+    "color": "brown",
+    "gender": "kids",
+    "price_range": "$99-129",
+    "attributes": {
+      "closure": "buckle",
+      "style": "hiking",
+      "outsole_pattern": "waffle",
+      "heel_height_mm": 30
+    },
+    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-014.jpg"
+  },
+  "SKU-015": {
+    "sku": "SKU-015",
+    "category": "shoes",
+    "brand": "LoopWear",
+    "material": "canvas",
+    "color": "white",
+    "gender": "kids",
+    "price_range": "$49-69",
+    "attributes": {
+      "closure": "buckle",
+      "style": "sandal",
+      "outsole_pattern": "lug",
+      "heel_height_mm": 30
+    },
+    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-015.jpg"
+  },
+  "SKU-016": {
+    "sku": "SKU-016",
+    "category": "shoes",
+    "brand": "LoopWear",
+    "material": "mesh",
+    "color": "tan",
+    "gender": "women",
+    "price_range": "$129-179",
+    "attributes": {
+      "closure": "slip-on",
+      "style": "sneaker",
+      "outsole_pattern": "smooth",
+      "heel_height_mm": 20
+    },
+    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-016.jpg"
+  }
+}
