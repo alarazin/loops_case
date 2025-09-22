@@ -41,7 +41,7 @@ def query_gemini(image_gcs_uri: str, context_card: Dict[str, Any], question: str
     **Your Tasks:**
     1.  **Answer the Question:** Based on both the image and the context card, answer the user's question. If the image provides insufficient evidence, state that clearly and cite rule R-102 if applicable.
     2.  **Extract Attributes:** Identify the following attributes from the image and reconcile them with the specs in the context card: `color`, `closure`, `style`, `outsole_pattern`.
-    3.  **Check Compliance:** Evaluate all rules listed in the context card. For each rule, provide a "pass" or "fail" status and a brief justification. **Crucially, if the user's question asks about a specific claim (e.g., "Can we claim it is orthopedic?"), you must find the corresponding policy rule (e.g., R-103: "Do not claim products are 'orthopedic'...") and explicitly fail that rule in your compliance check.** This is a mandatory instruction.
+    3.  **Check Compliance:** Evaluate all rules listed in the context card. For each rule, provide a "pass" or "fail" status and a brief justification. **Crucially, if the user's question probes a specific claim area that is governed by a rule (e.g., asking about "orthopedic" properties, "water resistance", etc.), you must find the corresponding policy rule (e.g., R-103, R-203) and explicitly fail that rule in your compliance check, explaining that the claim cannot be made.** This is a mandatory instruction.
 
     **Output Format:**
     You MUST respond with a single, valid JSON object. Do not include any text or formatting outside of this JSON object. The JSON object should follow this exact schema:
