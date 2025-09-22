@@ -1,12 +1,12 @@
 # Multimodal Product Analysis API
 
-This project is a demonstration of a multimodal AI system that uses Google's Gemini Pro Vision model to analyze product images and associated contextual data. It exposes a REST API built with FastAPI to answer questions, extract structured attributes, and check for policy compliance.
+This project is a demonstration of a multimodal AI system that uses Google's Gemini Flash 2.5 model to analyze product images and associated contextual data. It exposes a REST API built with FastAPI to answer questions, extract structured attributes, and check for policy compliance.
 
 ## Features
 
 - **Multimodal Analysis**: Processes both images and text (product specifications, brand rules).
 - **FastAPI Backend**: A robust and fast API server.
-- **Google Vertex AI**: Integrates with the Gemini Pro Vision model for analysis.
+- **Google Vertex AI**: Integrates with the Gemini for analysis.
 - **Google Cloud Storage (GCS)**: Loads images and context files from GCS.
 - **Automated Evaluation**: Includes a script to evaluate the model's performance against a predefined test set.
 
@@ -70,7 +70,7 @@ Use the provided script to start the FastAPI server. It will load the environmen
 bash run_server.sh
 ```
 
-The API will be available at `http://127.0.0.1:8000`. You can access the interactive documentation at `http://127.0.0.1:8000/docs`.
+The API will be available at `http://127.0.0.1:8000`.
 
 ### 2. Run the Evaluation Script
 
@@ -88,3 +88,4 @@ This will execute the tests defined in `datasets/shoes/eval_samples.jsonl` and s
 2.  **Context Loading**: The server fetches product specifications from the local CSV and loads context files (e.g., `brand_rules_shoes_v1.json`) from GCS.
 3.  **Vertex AI Query**: An image URI, a composed context card, and the user's question are sent to the Gemini model.
 4.  **JSON Response**: The model returns a structured JSON object containing the answer, extracted attributes, and compliance checks, which is then sent back to the user.
+
