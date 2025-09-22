@@ -2,7 +2,6 @@ import requests
 import json
 import pandas as pd
 from typing import List, Dict, Any
-
 import os
 
 # Configuration
