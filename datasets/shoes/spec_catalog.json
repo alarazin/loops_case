@@ -13,7 +13,7 @@
       "outsole_pattern": "lug",
       "heel_height_mm": 0
     },
-    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-001.jpg"
+    "image_gcs_uri": "gs://YOUR_BUCKET/images/SKU-001.jpg"
   },
   "SKU-002": {
     "sku": "SKU-002",
@@ -29,7 +29,7 @@
       "outsole_pattern": "lug",
       "heel_height_mm": 10
     },
-    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-002.jpg"
+    "image_gcs_uri": "gs://YOUR_BUCKET/images/SKU-002.jpg"
   },
   "SKU-003": {
     "sku": "SKU-003",
@@ -45,7 +45,7 @@
       "outsole_pattern": "lug",
       "heel_height_mm": 0
     },
-    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-003.jpg"
+    "image_gcs_uri": "gs://YOUR_BUCKET/images/SKU-003.jpg"
   },
   "SKU-004": {
     "sku": "SKU-004",
@@ -61,7 +61,7 @@
       "outsole_pattern": "lug",
       "heel_height_mm": 0
     },
-    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-004.jpg"
+    "image_gcs_uri": "gs://YOUR_BUCKET/images/SKU-004.jpg"
   },
   "SKU-005": {
     "sku": "SKU-005",
@@ -77,7 +77,7 @@
       "outsole_pattern": "smooth",
       "heel_height_mm": 30
     },
-    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-005.jpg"
+    "image_gcs_uri": "gs://YOUR_BUCKET/images/SKU-005.jpg"
   },
   "SKU-006": {
     "sku": "SKU-006",
@@ -93,7 +93,7 @@
       "outsole_pattern": "lug",
       "heel_height_mm": 20
     },
-    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-006.jpg"
+    "image_gcs_uri": "gs://YOUR_BUCKET/images/SKU-006.jpg"
   },
   "SKU-007": {
     "sku": "SKU-007",
@@ -109,7 +109,7 @@
       "outsole_pattern": "smooth",
       "heel_height_mm": 10
     },
-    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-007.jpg"
+    "image_gcs_uri": "gs://YOUR_BUCKET/images/SKU-007.jpg"
   },
   "SKU-008": {
     "sku": "SKU-008",
@@ -125,7 +125,7 @@
       "outsole_pattern": "lug",
       "heel_height_mm": 10
     },
-    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-008.jpg"
+    "image_gcs_uri": "gs://YOUR_BUCKET/images/SKU-008.jpg"
   },
   "SKU-009": {
     "sku": "SKU-009",
@@ -141,7 +141,7 @@
       "outsole_pattern": "lug",
       "heel_height_mm": 0
     },
-    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-009.jpg"
+    "image_gcs_uri": "gs://YOUR_BUCKET/images/SKU-009.jpg"
   },
   "SKU-010": {
     "sku": "SKU-010",
@@ -157,7 +157,7 @@
       "outsole_pattern": "waffle",
       "heel_height_mm": 20
     },
-    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-010.jpg"
+    "image_gcs_uri": "gs://YOUR_BUCKET/images/SKU-010.jpg"
   },
   "SKU-011": {
     "sku": "SKU-011",
@@ -173,7 +173,7 @@
       "outsole_pattern": "smooth",
       "heel_height_mm": 30
     },
-    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-011.jpg"
+    "image_gcs_uri": "gs://YOUR_BUCKET/images/SKU-011.jpg"
   },
   "SKU-012": {
     "sku": "SKU-012",
@@ -189,7 +189,7 @@
       "outsole_pattern": "lug",
       "heel_height_mm": 30
     },
-    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-012.jpg"
+    "image_gcs_uri": "gs://YOUR_BUCKET/images/SKU-012.jpg"
   },
   "SKU-013": {
     "sku": "SKU-013",
@@ -205,7 +205,7 @@
       "outsole_pattern": "lug",
       "heel_height_mm": 30
     },
-    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-013.jpg"
+    "image_gcs_uri": "gs://YOUR_BUCKET/images/SKU-013.jpg"
   },
   "SKU-014": {
     "sku": "SKU-014",
@@ -221,7 +221,7 @@
       "outsole_pattern": "waffle",
       "heel_height_mm": 30
     },
-    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-014.jpg"
+    "image_gcs_uri": "gs://YOUR_BUCKET/images/SKU-014.jpg"
   },
   "SKU-015": {
     "sku": "SKU-015",
@@ -237,7 +237,7 @@
       "outsole_pattern": "lug",
       "heel_height_mm": 30
     },
-    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-015.jpg"
+    "image_gcs_uri": "gs://YOUR_BUCKET/images/SKU-015.jpg"
   },
   "SKU-016": {
     "sku": "SKU-016",
@@ -253,6 +253,6 @@
       "outsole_pattern": "smooth",
       "heel_height_mm": 20
     },
-    "image_gcs_uri": "gs://alara-case-study-bucket/images/SKU-016.jpg"
+    "image_gcs_uri": "gs://YOUR_BUCKET/images/SKU-016.jpg"
   }
 }
