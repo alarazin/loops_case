@@ -21,8 +21,8 @@ This project is a demonstration of a multimodal AI system that uses Google's Gem
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repository-url>
-cd <repository-name>
+git clone https://github.com/alarazin/loops_case.git
+cd loops_case
 ```
 
 ### 2. Configure Your Environment
